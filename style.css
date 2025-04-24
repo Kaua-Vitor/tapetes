@@ -1,3 +1,5 @@
+/* parte escrita pelo Lucas*/
+
 body{
     background-color: #C8AD7F;
 }
@@ -55,6 +57,7 @@ font-size: 1.2rem;
 margin-bottom: 1.5rem;
 }
 
+/* alterado para classe, para ser usado apenas quando necessário*/
 .format_img {
 max-width: 20%;
 height: 20%;
@@ -72,3 +75,47 @@ margin-bottom: 0.8rem;
 }
 
 /* parte escrita pelo Kauã*/
+
+.container_banner {
+    display: flex;                               /* Usado para alinhar itens internos */
+    flex-direction: column;                      /* Organiza os itens em coluna */
+    justify-content: center;                     /* Centraliza verticalmente */
+    align-items: center;                         /* Centraliza horizontalmente */
+    text-align: center;                          /* Centraliza o texto dentro do contêiner */
+    height: 100%;                                /* Faz o contêiner ocupar toda a altura da tela */
+    background-image: url('tapete_banner.jpeg'); /* Caminho para a imagem de fundo */
+    background-size: cover;                      /* Ajusta a imagem para cobrir todo o contêiner */
+    background-position: center;                 /* Centraliza a imagem */
+    background-repeat: no-repeat;                /* Evita que a imagem se repita */
+    color: white;                              /* Cor do texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra no texto para melhorar a legibilidade */
+}
+
+.artigo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+
+}
+
+
+.artigo_filho{
+    border-style: solid;
+    border-color: #886933;
+    align-self: auto;
+}   
+
+.container_alinhar {
+    display: flex;
+}
+
+.caixinha {
+    border: #886933;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
