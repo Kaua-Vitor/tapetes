@@ -1,0 +1,74 @@
+body{
+    background-color: #C8AD7F;
+}
+
+nav {
+background-color: #333;
+padding: 1.5rem;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+gap: 2rem;
+margin: 0;
+padding: 0;
+}
+
+nav ul li {
+display: inline;
+}
+
+nav ul li a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+font-size: 1.2rem;
+}
+
+nav li :hover {
+background-color: #615f5f;
+}
+
+body {
+font-family: Arial, sans-serif;
+font-size: 1.1rem;
+line-height: 1.6;
+margin: 0;
+padding: 0;
+}
+
+section {
+padding: 2rem;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+h2,
+h3 {
+font-size: 2rem;
+margin-bottom: 1.5rem;
+}
+
+p {
+font-size: 1.2rem;
+margin-bottom: 1.5rem;
+}
+
+.format_img {
+max-width: 20%;
+height: 20%;
+border-radius: 8px;
+margin-bottom: 1.5rem;
+}
+
+ul {
+font-size: 1.2rem;
+line-height: 1.6;
+}
+
+ul li {
+margin-bottom: 0.8rem;
+}
+
+/* parte escrita pelo Kauã*/
