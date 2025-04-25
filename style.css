@@ -1,7 +1,7 @@
 /* parte escrita pelo Lucas*/
 
 body{
-    background-color: #C8AD7F;
+    background-color: #bd7100;
 }
 
 nav {
@@ -118,4 +118,6 @@ margin-bottom: 0.8rem;
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
+    background-color: #886933;
 }
+
