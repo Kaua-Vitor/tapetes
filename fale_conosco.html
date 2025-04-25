@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bizarre Bazar - Atendimento e Suporte</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #bd7100; /* Cor de fundo revertida para branco */
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .contact-section {
+            background-color: #fff; /* Cor de fundo revertida para branco */
+            border-radius: 10px;
+            border: 2px solid black; /* Borda preta fina */
+            padding: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .contact-info {
+            flex: 1;
+        }
+        
+        .contact-title {
+            color: #874b0f;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        
+        .contact-description {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #444;
+        }
+        
+        .email-box {
+            background-color: #874b0f;
+            border-radius: 5px;
+            padding: 15px;
+            color: #fff;
+            max-width: 350px;
+            border: 2px solid black; /* Borda preta fina */
+        }
+        
+        .email-address {
+            display: block;
+            margin: 5px 0;
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .copy-button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin: 10px 0;
+            text-transform: uppercase;
+        }
+        
+        .email-note {
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        
+        .bizarre-image {
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bizarre-image img {
+            max-width: 250px;
+            height: auto;
+            border-radius: 10px;
+        }
+        
+        .faq-section {
+            background-color: #e9e9e9;
+            border-radius: 10px;
+            padding: 20px;
+            border: 2px solid black; /* Borda preta fina */
+        }
+        
+        .faq-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .faq-description {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        
+        .faq-categories {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            float: left;
+            width: 28%;
+        }
+        
+        .faq-category {
+            background-color: #874b0f;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            border: 1px solid black; /* Borda preta fina */
+        }
+        
+        .faq-questions {
+            float: right;
+            width: 70%;
+        }
+        
+        .faq-item {
+            background-color: #fff; /* Cor de fundo revertida para branco */
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            border: 2px solid black; /* Borda preta fina */
+        }
+        
+        .faq-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-item-content {
+            display: none;
+            padding: 10px 0 0 0;
+            margin-top: 10px;
+            border-top: 1px solid #eee;
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .faq-item:hover {
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .clear {
+            clear: both;
+        }
+        
+        .plus-icon {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-section {
+                flex-direction: column;
+            }
+            
+            .faq-categories, .faq-questions {
+                float: none;
+                width: 100%;
+            }
+            
+            .faq-categories {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="site.html">Principal</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="novidades.html">Novidades</a></li>
+            <li><a href="produtos.html">Sobre nós</a></li>
+            <li><a href="fale_conosco.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <header class="header">
+            <strong><h1>Bizarre Bazar</h1></strong>
+            <div class="rating">
+                <!-- Área para estrelas de avaliação -->
+            </div>
+        </header>
+        
+        <section class="contact-section">
+            <div class="contact-info">
+                <h2 class="contact-title">Fale Conosco</h2>
+                <p class="contact-description">O e-mail é nosso principal canal de atendimento. Todos os e-mails são respondidos, geralmente respondemos em poucos minutos.</p>
+                <p class="contact-description">Fique tranquilo! Você será respondido de maneira rápida e eficaz.</p>
+                
+                <div class="email-box">
+                    <h3>Atendimento por e-mail</h3>
+                    <a href="mailto:sac@bizarrebazar.com.br" class="email-address">sac@bizarrebazar.com.br</a>
+                    <button class="copy-button">Copiar e-mail</button>
+                    <p class="email-note">Gmail: confira sua caixa de spam e promoções</p>
+                    <p class="email-note">Hotmail: confira sua caixa de lixo eletrônico ou pasta outros</p>
+                </div>
+            </div>
+
+            <div class="bizarre-image">
+                <img src="tapetes_logo.jpeg" alt="Bizarre Bazar Logo">
+            </div>
+        </section>
+        <section class="faq-section">
+            <div class="faq-header">
+                <h2 class="faq-title">DÚVIDAS FREQUENTES</h2>
+                <p class="faq-description">Navegue em nosso menu e veja nossas perguntas frequentes e, caso não encontre o que procura, utilize nosso atendimento por e-mail para entrar em contato conosco.</p>
+            </div>
+            
+            <div class="faq-content">
+                <div class="faq-categories">
+                    <div class="faq-category">
+                        <span>Dúvidas sobre o seu pedido</span>
+                        <span class="plus-icon">&gt;</span>
+                    </div>
+                    <div class="faq-category">
+                        <span>Dúvidas sobre a sua entrega de encomenda</span>
+                        <span class="plus-icon">&gt;</span>
+                    </div>
+                </div>
+                
+                <div class="faq-questions">
+                    <div class="faq-item">
+                        <div class="faq-item-header">
+                            <span>Como eu faço para acompanhar o status de meus pedidos?</span>
+                            <span class="plus-icon">+</span>
+                        </div>
+                        <div class="faq-item-content">
+                            Assim que a compra for efetuada será enviado via email, um codigo de rastreamento do seu pedido.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-item-header">
+                            <span>Qual é o prazo de aprovação do meu pedido?</span>
+                            <span class="plus-icon">+</span>
+                        </div>
+                        <div class="faq-item-content">
+                            O prazo de aprovação do pedido é de até 2 dias úteis, dependendo da forma de pagamento escolhida. Pagamentos via PIX são aprovados em minutos, enquanto boletos podem levar 1 a 2 dias úteis após a compensação bancária.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-item-header">
+                            <span>Realizei meu pagamento via PIX ou Boleto e recebi um e-mail de que meu pedido foi cancelado.</span>
+                            <span class="plus-icon">+</span>
+                        </div>
+                        <div class="faq-item-content">
+                            Caso seu pedido tenha sido cancelado após o pagamento via PIX ou boleto, entre em contato imediatamente pelo nosso e-mail sac@bizarrebazar.com.br informando o número do seu pedido e comprovante de pagamento para que possamos verificar o ocorrido e resolver sua situação.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-item-header">
+                            <span>Realizei meu pagamento via cartão de crédito e recebi um e-mail de que meu pedido foi cancelado.</span>
+                            <span class="plus-icon">+</span>
+                        </div>
+                        <div class="faq-item-content">
+                            Se seu pedido foi cancelado após pagamento com cartão de crédito, é possível que tenha ocorrido uma recusa pela operadora. Envie um e-mail para sac@bizarrebazar.com.br com o número do pedido e tentaremos ajudar. Você pode também tentar novamente com outro cartão ou método de pagamento.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-item-header">
+                            <span>Acabei de finalizar meu pedido, mas quero fazer a troca de algum produto que adquiri. O que devo fazer?</span>
+                            <span class="plus-icon">+</span>
+                        </div>
+                        <div class="faq-item-content">
+                            Para solicitar a troca de um produto recém-adquirido, envie um e-mail para sac@bizarrebazar.com.br imediatamente com seu número de pedido e as informações do produto que deseja trocar. Solicitações feitas antes do envio têm mais chances de serem atendidas. Após o envio, será necessário seguir nossa política de trocas e devoluções.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-item-header">
+                            <span>Ainda possui alguma dúvida?</span>
+                            <span class="plus-icon">+</span>
+                        </div>
+                        <div class="faq-item-content">
+                            Se você ainda tem dúvidas que não foram respondidas aqui, por favor entre em contato conosco através do e-mail sac@bizarrebazar.com.br. Nossa equipe está pronta para ajudar e responderá sua mensagem o mais breve possível.
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </section>
+    </div>
+    
+    <script>
+        // Script para copiar o e-mail para a área de transferência
+        document.querySelector('.copy-button').addEventListener('click', function() {
+            const email = document.querySelector('.email-address').textContent;
+            navigator.clipboard.writeText(email).then(function() {
+                alert('E-mail copiado com sucesso!');
+            });
+        });
+        
+        // Script para expandir as perguntas frequentes
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const header = this.querySelector('.faq-item-header');
+                const content = this.querySelector('.faq-item-content');
+                const icon = this.querySelector('.plus-icon');
+                
+                // Toggle conteúdo
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                    icon.textContent = '+';
+                } else {
+                    content.style.display = 'block';
+                    icon.textContent = '-';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
