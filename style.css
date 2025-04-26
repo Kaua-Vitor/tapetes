@@ -83,7 +83,7 @@ margin-bottom: 0.8rem;
     align-items: center;                         /* Centraliza horizontalmente */
     text-align: center;                          /* Centraliza o texto dentro do contêiner */
     height: 100%;                                /* Faz o contêiner ocupar toda a altura da tela */
-    background-image: url('tapete_banner.jpeg'); /* Caminho para a imagem de fundo */
+    background-image: url('imagens/tapete_banner.jpeg'); /* Caminho para a imagem de fundo */
     background-size: cover;                      /* Ajusta a imagem para cobrir todo o contêiner */
     background-position: center;                 /* Centraliza a imagem */
     background-repeat: no-repeat;                /* Evita que a imagem se repita */
@@ -121,3 +121,38 @@ margin-bottom: 0.8rem;
     background-color: #886933;
 }
 
+
+.format_caixa{
+    max-width: 320px;
+    float: left;
+    border: #333 3px solid;
+    border-radius: 10px;
+    margin-right: 15px;
+
+}
+
+.wrapper{
+ margin: 150px auto;
+ width: 80%;
+}
+
+.text_box{
+    color: #333;
+    background-color: #886933;
+}
+
+.text_box h2{
+    font-size: 42px;
+}
+
+.text_box p{
+    font-size: 30px;
+}
+
+.img_prod{
+    max-width: 10%;
+    max-height: 10%;
+    border: #333;
+    border-style: solid;
+    border-radius: 20px;
+}
