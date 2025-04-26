@@ -1,4 +1,194 @@
-/* parte escrita pelo Lucas*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #bd7100; /* Cor de fundo revertida para branco */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.contact-section {
+    background-color: #fff; /* Cor de fundo revertida para branco */
+    border-radius: 10px;
+    border: 2px solid black; /* Borda preta fina */
+    padding: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-title {
+    color: #874b0f;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-description {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.email-box {
+    background-color: #874b0f;
+    border-radius: 5px;
+    padding: 15px;
+    color: #fff;
+    max-width: 350px;
+    border: 2px solid black; /* Borda preta fina */
+}
+
+.email-address {
+    display: block;
+    margin: 5px 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+.copy-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.email-note {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.bizarre-image {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bizarre-image img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.faq-section {
+    background-color: #e9e9e9;
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid black; /* Borda preta fina */
+}
+
+.faq-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.faq-description {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.faq-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    float: left;
+    width: 28%;
+}
+
+.faq-category {
+    background-color: #874b0f;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid black; /* Borda preta fina */
+}
+
+.faq-questions {
+    float: right;
+    width: 70%;
+}
+
+.faq-item {
+    background-color: #fff; /* Cor de fundo revertida para branco */
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 2px solid black; /* Borda preta fina */
+}
+
+.faq-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-item-content {
+    display: none;
+    padding: 10px 0 0 0;
+    margin-top: 10px;
+    border-top: 1px solid #eee;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.faq-item:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.clear {
+    clear: both;
+}
+
+.plus-icon {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+    }
+    
+    .faq-categories, .faq-questions {
+        float: none;
+        width: 100%;
+    }
+    
+    .faq-categories {
+        margin-bottom: 20px;
+    }
+}
 
 body{
     background-color: #bd7100;
@@ -74,7 +264,6 @@ ul li {
 margin-bottom: 0.8rem;
 }
 
-/* parte escrita pelo Kauã*/
 
 .container_banner {
     display: flex;                               /* Usado para alinhar itens internos */
@@ -113,13 +302,17 @@ margin-bottom: 0.8rem;
 }
 
 .caixinha {
-    border: #886933;
-    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    width: 80%;
+    background-color: #8B4513; /* marrom bonito */
+    padding: 20px;
     border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
-    background-color: #886933;
+    color: white; /* pra melhorar o contraste do texto */
 }
+
 
 
 .format_caixa{
@@ -156,3 +349,51 @@ margin-bottom: 0.8rem;
     border-style: solid;
     border-radius: 20px;
 }
+
+        .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    
+    .produto {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        gap: 20px; 
+    }
+
+    .produto img {
+        border-radius: 10px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.575);
+        height: 150px; 
+        width: 150px; 
+    }
+
+    .text_box {
+        text-align: left;
+    }
+
+    
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
